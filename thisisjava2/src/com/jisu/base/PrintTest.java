@@ -9,5 +9,6 @@ public class PrintTest {
 		System.out.println("나이: " + age);
 		System.out.println("제 이름은 " + name + " 나이는 " + age + "입니다.");
 		System.out.printf("제 이름은 %s이고 나이는 %d입니다.", name, age);
+		
 	} 
 }
