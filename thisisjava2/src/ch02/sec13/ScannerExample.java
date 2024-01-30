@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class ScannerExample {
 	public static void main(String[] args) throws Exception{
-		Scanner scanner = new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("x 값 입력: ");
-		String strX = scanner.nextLine();
+		String strX = sc.nextLine();
 		int x = Integer.parseInt(strX);
 		
 		System.out.print("y 값 입력: ");
-		String strY = scanner.nextLine();
+		String strY = sc.nextLine();
 		int y = Integer.parseInt(strY);
 		
 		int result = x + y;
@@ -20,7 +20,7 @@ public class ScannerExample {
 		
 		while(true) {
 			System.out.print("입력 문자열: ");
-			String data = scanner.nextLine();
+			String data = sc.nextLine();
 			if(data.equals("q")) {
 				//q를 입력하면 종료됨
 				break;
