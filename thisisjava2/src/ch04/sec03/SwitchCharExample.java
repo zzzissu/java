@@ -3,7 +3,7 @@ package ch04.sec03;
 public class SwitchCharExample {
 	public static void main(String[] args) {
 		char grade = 'B';
-		
+		//if문은 switch로 변환 가능
 		switch(grade) {
 			case 'A':
 			case 'a':
