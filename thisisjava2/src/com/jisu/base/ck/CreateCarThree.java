@@ -18,7 +18,7 @@ class CarThree {
 		this.carYear = carYear;
 		System.out.printf("나는 매개변수 세 개를 갖는 생성자입니다.\n");
 	}
-	//CarThree는 생성자 3개를 갖고있음 = 오버로딩 : 입력값의 타입이 다르거나
+	//CarThree는 생성자 3개를 갖고있음 = 오버로딩 : 입력값의 타입이 다르거나 
 }
 public class CreateCarThree {
 	public static void main(String[]args) {
