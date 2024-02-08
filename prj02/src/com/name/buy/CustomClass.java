@@ -6,15 +6,19 @@ public class CustomClass {
 	int age;			//회원 나이
 	
 	ProductClass[] shopingBasket;			//물품을 저장할 장바구니
+	//int[] shopingBasket = new ProductClass[10];
 	
-	public CustomClass(String name, int id, int age) { //순서 맞춰야 함
-		this.id = id;
+	
+	public CustomClass(String name, int id, int age, ProductClass[] shopingBasket) { //순서 맞춰야 함
 		this.name = name;
+		this.id = id;
 		this.age = age;
+		//this.shopingBasket = shopingBasket;
+
 	}
 	
 	void CustomInfo() {
-		System.out.printf("회원이름: %s, 회원번호: %d, 회원나이: %d", name, id, age);
+		System.out.printf("회원이름: %s, 회원번호: %d, 회원나이: %d \n", name, id, age);
 	}
 	
 }

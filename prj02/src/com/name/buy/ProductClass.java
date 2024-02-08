@@ -14,7 +14,7 @@ public class ProductClass {
 	}
 	
 	void ProInfo() {
-		System.out.printf("물품번호: %d, 물품이름: %s, 물품가격: %d원, 물품수량: %d개", id, name, price, quantity);
+		System.out.printf("물품번호: %d, 물품이름: %s, 물품가격: %d원, 물품수량: %d개 \n", id, name, price, quantity);
 	}
 }
 //물건
