@@ -16,5 +16,10 @@ public class ProductClass {
 	void ProInfo() {
 		System.out.printf("물품번호: %d, 물품이름: %s, 물품가격: %d원, 물품수량: %d개 \n", id, name, price, quantity);
 	}
+	
+	boolean check(int quantity1) {		//구입이 가능한지 확인
+		return this.quantity >= quantity1 ? true : false;	//참 거짓 구분
+	}
+	//출력을 모를 때 우선 void로 작성 후 나중에 수정하는게 쉬움
 }
 //물건
