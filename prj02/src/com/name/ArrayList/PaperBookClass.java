@@ -1,6 +1,6 @@
 package com.name.ArrayList;
 
-public class PaperBookClass {
+public class PaperBookClass extends Book {
 	int size;
 	
 	private PaperBookClass(int size) {
