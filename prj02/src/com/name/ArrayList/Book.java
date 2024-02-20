@@ -150,19 +150,13 @@ public class Book {
 				case 0:
 					System.out.println("도서 관리 프로그램을 종료하시겠습니까?(Y/N)");
 					String exit = sc.nextLine();
-					if(exit.equals("Y")) {
+					if(exit.equals("Y")||exit.equals("y")) {
 						System.out.println("도서 관리 프로그램을 종료합니다.");
 						sc.close();
 						System.exit(0);
-					} else if(exit.equals("y")) {
-						System.out.println("도서 관리 프로그램을 종료합니다.");
-						sc.close();
-						System.exit(0); 
-					} else if(exit.equals("N")) {
+					} else if(exit.equals("N")||exit.equals("n")) {
 						System.out.println("프로그램을 재시작합니다.");
-					} else if(exit.equals("n")) {
-						System.out.println("프로그램을 재시작합니다.");
-					}
+					} 
 					break;
 			}
 		}
