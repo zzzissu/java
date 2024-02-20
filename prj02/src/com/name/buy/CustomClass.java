@@ -1,5 +1,5 @@
 package com.name.buy;
-
+ 
 public class CustomClass {
 	int id;				//회원 번호
 	String name;		//회원 이름

@@ -6,7 +6,7 @@ public class PaperBookClass extends BookClass {
 	PaperBookClass(int size) {
 		this.size = size;
 	}
- 
+  
 	public int getSize() {
 		return size;
 	}
