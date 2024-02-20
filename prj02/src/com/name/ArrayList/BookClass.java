@@ -9,7 +9,7 @@ public class BookClass {
 	private String author;		//저자
 	private int price;			//가격
 	private String publisher;	//출판사
-	private float tax = 1.1f;	//세금
+	private final float tax = 1.1f;	//세금
 	
 	
 	BookClass(){}		//생성자
@@ -52,9 +52,7 @@ public class BookClass {
 	public float getTax() {
 		return tax;
 	}
-	public void setTax(float tax) {
-		this.tax = tax;
-	}
+	
 
 	@Override
 	public String toString() {
