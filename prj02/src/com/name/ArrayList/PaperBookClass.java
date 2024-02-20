@@ -20,4 +20,4 @@ public class PaperBookClass extends BookClass {
 		System.out.printf("책 페이지 수: %d\n", size);
 	}
 }
- 
+  
