@@ -33,7 +33,7 @@ public class BookClass {
 	}
 	public void setAuthor(String author) {
 		this.author = author;
-	}
+	} 
 
 	public int getPrice() {
 		return price;

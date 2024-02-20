@@ -84,7 +84,7 @@ public class Book {
 						} 
 						break;
 						
-			//2. 도서 검색
+			//2. 도서 검색 
 				case 2:		
 					System.out.println("도서 검색(제목 및 저자): ");
 					String search = sc.nextLine();
