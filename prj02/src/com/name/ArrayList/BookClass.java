@@ -2,8 +2,6 @@ package com.name.ArrayList;
 
 import java.util.List;
 
-//import java.util.ArrayList;
-
 public class BookClass {
 	private String title;		//책 제목
 	private String author;		//저자
