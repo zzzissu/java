@@ -6,7 +6,7 @@ public class EBookClass extends BookClass {
 	EBookClass (String Devices) {
 		this.Devices = Devices;
 	}
-  
+   
 	public String getDevices() {
 		return Devices;
 	}

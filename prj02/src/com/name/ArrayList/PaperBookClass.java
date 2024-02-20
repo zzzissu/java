@@ -1,6 +1,7 @@
 package com.name.ArrayList;
 
 public class PaperBookClass extends BookClass {
+ 
 	int size;
 	
 	PaperBookClass(int size) {
@@ -19,3 +20,4 @@ public class PaperBookClass extends BookClass {
 		System.out.printf("책 페이지 수: %d\n", size);
 	}
 }
+ 
