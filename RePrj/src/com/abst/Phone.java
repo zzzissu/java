@@ -17,6 +17,9 @@ class IPhone implements Phone {
 	public String getOs() {
 		return "MacOs";
 	}
+	void filedInfo() {
+		System.out.println(version);
+	}
 }
 
 class Galaxy implements Phone {
@@ -30,4 +33,7 @@ class Galaxy implements Phone {
 	public String getOs() {
 		return "Androide";
 	}	
+	void filedInfo() {
+		System.out.println(version);
+	}
 }
