@@ -28,5 +28,36 @@ public class SocketClient {
 			this.clientIp = isa.getHostName();
 			receive();
 		} catch (IOException e) {}
+		
+		//메소드: JSON 받기
+		public void receive() {
+			chatServer.threadPool.execute(() -> {
+				try {
+					while(true) {
+						String receiveJson = dis.readUFT();
+						
+						JSONObject jsonObject = new JSONObject(receiveJson);
+						String command = jsonObject.getString("command");
+						
+						switch(command) {
+						case "incoming":
+							this.chatName = jsonObject.getString("data");
+							chatServer.sendToAll(this,  "들어오셨습니다.");
+							chatServer.addSocketClient(this);
+							break;
+						case " message":
+							String message = jsonObject.getString("data");
+							chatServer.sendToAll(this, message);
+							break;
+						}
+					}
+				} catch(IOException e) {
+					chatServer.sendToAll(this, "나가셨습니다.");
+					chatServer.removeSocketClient(this);
+				}
+			});
+		}
+		
+		//
 	}
 }
